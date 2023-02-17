@@ -9,19 +9,43 @@
     <title>Awesome Books</title>
 </head>
 <body>
-    <nav>
+    <header>
+    <nav class="nav-bar">
+        <h1>Awesome books</h1>
+        <ul class="list-elements">
+            <li id="list-link" class="nav-link list">
+                <a href="#list"> List</a>
+            </li>
+            <li id="add-new-link" class="nav-link list">
+                <a href="#add-new"> Add new</a>
+            </li>
+            <li id="conatct-link" class="nav-link list">
+                <a href="#contact"> List</a>
+            </li>
+        </ul>
         
     </nav>
-    <h1>Awesome books</h1>
+</header>
+
+<section id="list" class="books content">
+    <h2 class="awesome">All Awesome Books</h2>
     <ul class="books-counter">
     </ul>
+</section>
+
+<section>
     <div>
-            <form action="" class="form-books" id="form-books">
-            <input type="text" id="title" name="title" placeholder="Title">
-            <input type="text" id="author" name="author" placeholder="Author">
-            <input type="submit" value="Add"></input>
-            </form>
-    </div>
+        <h2>Add a new book</h2>
+        <form action="" class="form-books" id="form-books">
+        <input type="text" id="title" name="title" placeholder="Title">
+        <input type="text" id="author" name="author" placeholder="Author">
+        <input type="submit" value="Add"></input>
+        </form>
+</div>
+
+</section>
+
+    
     <script type="module" src="./index.js"></script>
 </body>
 </html>

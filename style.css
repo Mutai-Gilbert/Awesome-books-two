@@ -1,3 +1,103 @@
-li {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Balsamiq Sans', sans-serif;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  ul,
+  p {
+    margin: 0;
+  }
+  
+  header {
+    margin: 30px 0;
+  }
+  
+  h1 {
+    font-size: 1rem;
+  }
+  
+  .nav-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px #000 solid;
+    padding: 0.5rem 1rem;
+    position: fixed;
+    width: 100%;
+    margin-top: -30px;
+  }
+  
+  .nav-bar a {
+    text-decoration: none;
+    color: #000;
+    padding-right: 0.8rem;
+  }
+  
+  .nav-bar a:hover {
+    text-decoration: underline;
+    text-underline-position: under;
+    color: #00f;
+  }
+  .nav-bar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
     list-style-type: none;
-}
+  }
+  
+  .list:nth-child(1) {
+    border-right: 2px solid #111;
+    padding-right: 10px;
+  }
+  
+  .list:nth-child(2) {
+    border-right: 2px solid #111;
+    padding-right: 10px;
+  }
+
+  #list.books.content{
+    padding: 5rem;
+  }
+
+  .book-counter {
+    width: 99%;
+    border: 2px #000 solid;
+    gap: 15px;
+  }
+  
+  .books {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .awesome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .book-counter li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5px 5px;
+    border-bottom: 1px solid #ababab;
+    list-style: none;
+  }
+  
+  #book-counter li:nth-child(odd) {
+    background: rgb(194, 187, 187);
+  }
